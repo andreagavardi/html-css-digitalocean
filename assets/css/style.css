@@ -92,6 +92,7 @@ nav .hamburgher {
 .jumbotron .row {
   margin: 60px 0;
 }
+
 .jumbo_text {
   color: white;
 }
@@ -158,6 +159,33 @@ nav .hamburgher {
   margin-top: 10px;
 }
 
+/**************
+Main
+***************/
+
+#banner.flex_container {
+  flex-direction: column;
+  align-items: center;
+}
+#banner h3 {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  color: #626262;
+}
+#banner .apps img {
+  height: 100px;
+}
+#banner a {
+  text-decoration: none;
+  color: #2668fa;
+  margin-top: 30px;
+}
+
+.apps .row.flex_container {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* Responsive */
 
 /* media query small devices */
@@ -184,6 +212,9 @@ nav .hamburgher {
     margin-left: 0;
     margin-top: 20px;
   }
+  /**********
+  Main
+  **********/
 }
 
 /* media query medium devices */
@@ -204,5 +235,17 @@ nav .hamburgher {
     display: inline-block;
     color: #2484fa;
     line-height: 37px;
+  }
+
+  /**********
+  Main
+  **********/
+
+  #banner .apps img {
+    height: 70px;
+  }
+  .apps .row.flex_container {
+    justify-content: center;
+    flex-wrap: nowrap;
   }
 }
