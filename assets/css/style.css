@@ -1,0 +1,72 @@
+body {
+  font-family: "Inter-Medium", "Helvetica", "san-serif";
+}
+
+/* Common Rules  */
+.bg_blue {
+  background-color: #2668fa;
+}
+.bg_darkblue {
+  background-color: #021c4e;
+}
+.bg_linear {
+  background: linear-gradient(#143d9b, #0c4cbb);
+}
+.bg_lightgrey {
+  background-color: #f3f5f9;
+}
+.bg_green {
+  background-color: #60cf76;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+.btn_empty {
+  border: 1px solid #2668fa;
+  color: #2668fa;
+  text-decoration: none;
+}
+.flex_container {
+  display: flex;
+}
+
+.text_right {
+  text-align: right;
+}
+
+.unstyle li {
+  list-style: none;
+  display: inline-block;
+}
+.unstyle a:not(.btn_empty) {
+  text-decoration: none;
+  color: black;
+}
+
+/**********
+Header 
+***********/
+nav .row {
+  padding: 20px 0;
+}
+
+nav .logo img {
+  width: 165px;
+}
+
+nav .flex_container {
+  align-items: center;
+}
+
+nav ul li {
+  padding: 5px;
+}
+
+nav > .container > .row > .flex_container:first-child {
+  justify-content: flex-start;
+}
+nav > .container > .row > .flex_container:last-child {
+  justify-content: flex-end;
+}
