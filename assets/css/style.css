@@ -70,3 +70,49 @@ nav > .container > .row > .flex_container:first-child {
 nav > .container > .row > .flex_container:last-child {
   justify-content: flex-end;
 }
+
+nav .hamburgher {
+  display: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 767px) {
+  /******
+    header
+    *******/
+  .container {
+    width: 90vw;
+  }
+  nav ul.unstyle {
+    display: none;
+  }
+  nav .logo img {
+    width: 200px;
+  }
+  nav .hamburgher {
+    display: inline-block;
+    color: #2484fa;
+    line-height: 37px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /******
+    header
+    *******/
+  .container {
+    width: 90vw;
+  }
+  nav ul.unstyle {
+    display: none;
+  }
+  nav .logo img {
+    width: 200px;
+  }
+  nav .hamburgher {
+    display: inline-block;
+    color: #2484fa;
+    line-height: 37px;
+  }
+}
