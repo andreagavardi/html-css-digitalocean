@@ -18,6 +18,9 @@ body {
 .bg_green {
   background-color: #60cf76;
 }
+.blue {
+  color: #2484fa;
+}
 
 .btn {
   border-radius: 5px;
@@ -48,8 +51,10 @@ body {
 /**********
 Header 
 ***********/
+
+/* navbar */
 nav .row {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 nav .logo img {
@@ -75,8 +80,87 @@ nav .hamburgher {
   display: none;
 }
 
+/* Jumbotron  */
+.jumbotron {
+  background-image: url("../img/bg-banner-home.jpg");
+  background-size: cover;
+}
+.jumbotron.flex_container {
+  align-items: center;
+}
+
+.jumbotron .row {
+  margin: 60px 0;
+}
+.jumbo_text {
+  color: white;
+}
+.jumbo_text h1 {
+  font-size: 3.5rem;
+  padding-right: 50px;
+}
+.jumbo_text h3 {
+  font-size: 1.24rem;
+  line-height: 2rem;
+}
+
+.jumbotron form.flex_container {
+  flex-direction: column;
+  background-color: white;
+  padding: 30px 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 90px;
+}
+.jumbotron form h2 {
+  font-size: 1.75rem;
+  line-height: 2.75rem;
+}
+.jumbotron form [type*="email"],
+.jumbotron form [type*="password"] {
+  line-height: 2.5rem;
+  font-size: 1rem;
+  padding-left: 5px;
+  border: 1px solid #f3f5f9;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.jumbotron form [type*="submit"] {
+  height: 1.75rem;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.jumbotron #create {
+  background-color: #5899fa;
+  color: white;
+}
+.jumbotron #signup {
+  background-color: white;
+  color: #626262;
+  box-shadow: 1px 1px 2px -1px #62626285;
+  width: 100%;
+}
+.jumbotron #btn_signup {
+  position: relative;
+}
+.jumbotron #btn_signup img {
+  position: absolute;
+  top: 30%;
+  left: 5px;
+  height: 20px;
+}
+
+.jumbotron form span {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
 /* Responsive */
 
+/* media query small devices */
 @media screen and (max-width: 767px) {
   /******
     header
@@ -95,8 +179,14 @@ nav .hamburgher {
     color: #2484fa;
     line-height: 37px;
   }
+
+  .jumbotron form.flex_container {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
+/* media query medium devices */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   /******
     header
