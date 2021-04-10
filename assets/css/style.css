@@ -2,12 +2,11 @@ body {
   font-family: "Inter-Medium", "Helvetica", "san-serif";
 }
 
-/* Common Rules  */
+/****Common Rules  ***/
+
+/* colori  */
 .bg_blue {
   background-color: #2668fa;
-}
-.bg_darkblue {
-  background-color: #021c4e;
 }
 .bg_linear {
   background: linear-gradient(#143d9b, #0c4cbb);
@@ -22,6 +21,7 @@ body {
   color: #2484fa;
 }
 
+/* bottoni */
 .btn {
   border-radius: 5px;
   padding: 8px 10px;
@@ -31,12 +31,32 @@ body {
   color: #2668fa;
   text-decoration: none;
 }
+
+.card {
+  padding-right: 20px;
+}
+
+/* containers  */
+.container_sm {
+  max-width: 65%;
+  margin: 0 auto;
+}
 .flex_container {
   display: flex;
 }
 
+/* testo */
 .text_right {
   text-align: right;
+}
+h2 {
+  font-size: 2.25rem;
+  color: #021c4e;
+}
+h3 {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #626262;
 }
 
 .unstyle li {
@@ -93,14 +113,13 @@ nav .hamburgher {
   margin: 60px 0;
 }
 
-.jumbo_text {
-  color: white;
-}
 .jumbo_text h1 {
+  color: white;
   font-size: 3.5rem;
   padding-right: 50px;
 }
 .jumbo_text h3 {
+  color: white;
   font-size: 1.24rem;
   line-height: 2rem;
 }
@@ -152,6 +171,7 @@ nav .hamburgher {
   top: 30%;
   left: 5px;
   height: 20px;
+  opacity: 0.8;
 }
 
 .jumbotron form span {
@@ -166,6 +186,7 @@ Main
 #banner.flex_container {
   flex-direction: column;
   align-items: center;
+  padding-bottom: 20px;
 }
 #banner h3 {
   margin: 2rem 0;
@@ -184,6 +205,47 @@ Main
 .apps .row.flex_container {
   justify-content: center;
   flex-wrap: wrap;
+}
+
+/* seconda sezione */
+#deploy {
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+#deploy .main_text {
+  text-align: center;
+  margin-bottom: 60px;
+}
+#deploy .main_text h3 {
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 2rem;
+  color: #626262;
+  padding-top: 15px;
+}
+
+#deploy .container_sm .row {
+  margin-bottom: 30px;
+}
+#deploy .unstyle {
+  border-left: 1px solid #60cf76;
+}
+#deploy .unstyle li {
+  display: block;
+  padding: 10px 5px;
+}
+#deploy .unstyle a {
+  font-size: 1.3rem;
+  color: #75809a;
+}
+
+/* Cards sezione deploy css */
+#deploy .card h4 {
+  margin: 15px 0;
+}
+#deploy .card p {
+  color: #75809a;
+  line-height: 1.5rem;
 }
 
 /* Responsive */
@@ -215,6 +277,13 @@ Main
   /**********
   Main
   **********/
+
+  .card {
+    padding-top: 20px;
+  }
+  #deploy .container_sm .row {
+    margin-bottom: 0;
+  }
 }
 
 /* media query medium devices */
