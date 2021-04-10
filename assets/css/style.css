@@ -56,6 +56,12 @@ body {
   flex-direction: column;
 }
 
+.link {
+  text-decoration: none;
+  color: #2668fa;
+  margin-top: 30px;
+}
+
 /* testo */
 .text_right {
   text-align: right;
@@ -209,11 +215,6 @@ Main
 }
 #banner .apps img {
   height: 100px;
-}
-#banner a {
-  text-decoration: none;
-  color: #2668fa;
-  margin-top: 30px;
 }
 
 .apps .row.flex_container {
