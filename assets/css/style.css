@@ -8,6 +8,7 @@ body {
 .pt-60 {
   padding-top: 60px;
 }
+
 .pb-50 {
   padding-bottom: 50px;
 }
@@ -43,6 +44,14 @@ body {
 .card {
   padding-right: 20px;
 }
+.card h4 {
+  margin: 15px 0;
+}
+.card p {
+  color: #75809a;
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
 
 /* containers  */
 .container_sm {
@@ -54,6 +63,12 @@ body {
 }
 .flex_col {
   flex-direction: column;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.flex_wrap {
+  flex-wrap: wrap;
 }
 
 .link {
@@ -248,13 +263,6 @@ Main
 }
 
 /* Cards sezione deploy css */
-#deploy .card h4 {
-  margin: 15px 0;
-}
-#deploy .card p {
-  color: #75809a;
-  line-height: 1.5rem;
-}
 
 /*********terza sezione SLIDE*********/
 
@@ -290,6 +298,22 @@ Main
   height: 50vh;
 }
 
+.slide_bottom {
+  margin-top: 20px;
+}
+.circle {
+  border: 1px solid blue;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 10px 3px;
+}
+
+/* quarta sezione FEATURES */
+
+#features .row {
+  margin-top: 40px;
+}
+
 /* Responsive */
 
 /* media query small devices */
@@ -316,15 +340,15 @@ Main
     margin-left: 0;
     margin-top: 20px;
   }
+  .jumbo_text h1 {
+    font-size: 2.5rem;
+  }
   /**********
   Main
   **********/
 
   .card {
     padding-top: 20px;
-  }
-  #deploy .container_sm .row {
-    margin-bottom: 0;
   }
 
   .prev,
@@ -334,6 +358,9 @@ Main
   .main_slide img {
     max-width: 100%;
     height: auto;
+  }
+  .circles {
+    margin-top: 80px;
   }
 }
 
@@ -367,5 +394,14 @@ Main
   .apps .row.flex_container {
     justify-content: center;
     flex-wrap: nowrap;
+  }
+
+  .main_slide img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .circles {
+    margin-top: 80px;
   }
 }
