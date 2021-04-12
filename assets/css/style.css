@@ -18,7 +18,7 @@ body {
   background-color: #2668fa;
 }
 .bg_linear {
-  background: linear-gradient(#143d9b, #0c4cbb);
+  background: linear-gradient(#0c4cbb, #133f9f);
 }
 .bg_lightgrey {
   background-color: #f3f5f9;
@@ -34,11 +34,15 @@ body {
 .btn {
   border-radius: 5px;
   padding: 8px 10px;
+  text-decoration: none;
 }
 .btn_empty {
   border: 1px solid #2668fa;
   color: #2668fa;
-  text-decoration: none;
+}
+.btn-white {
+  background-color: white;
+  color: #2668fa;
 }
 
 .card {
@@ -372,6 +376,21 @@ Main
 #rockerbox .circles {
   margin-top: 20px;
 }
+
+/* sesta sezione GET STARTED */
+
+#started {
+  height: 35vh;
+}
+#started h2 {
+  color: white;
+}
+
+#started .btn-white {
+  margin-top: 30px;
+  padding: 13px 20px;
+}
+
 /* Responsive */
 
 /* media query small devices */
